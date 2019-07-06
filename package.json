@@ -1,0 +1,34 @@
+{
+  "name": "finviz-scraper",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx babel ./src --out-dir ./dist -w --presets=@babel/env"
+  },
+  "keywords": [
+    "finance",
+    "stocks",
+    "business",
+    "data",
+    "scraper",
+    "news"
+  ],
+  "author": "Daniel Hernandez Hernandez",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.24.0",
+    "osmosis": "^1.1.10",
+    "request": "^2.88.0",
+    "slugify": "^1.3.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-polyfill": "^6.26.0"
+  }
+}
