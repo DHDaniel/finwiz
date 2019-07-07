@@ -233,7 +233,7 @@ Example output is shown below:
 
 ## Where does the information come from?
 
-Currently, all the information is sourced from [finviz](http://finviz.com) (yes, hence the name). Refer to their site for more information regarding each metric.
+Currently, all the information is sourced from [finviz](http://finviz.com) (yes, hence the name). Refer to their site for more information regarding each metric. This means data is not real-time -- it is delayed by around 15 minutes.
 
 ## Contributing
 
