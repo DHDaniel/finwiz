@@ -35,6 +35,7 @@ const getSnapshotInfo = (page) => {
 const processSnapshotInfo = (info) => {
   return new Promise((resolve, reject) => {
     let processed = {};
+    let eps_edge_case_processed = false;
     info.forEach(tuple => {
       let label = slugify(tuple[0].toLowerCase(), "_");
       let value = "";
@@ -48,6 +49,10 @@ const processSnapshotInfo = (info) => {
         let values = volatility(v);
         processed["volatility_week"] = values[0];
         processed["volatility_month"] = values[1];
+        return;
+      } else if ((label === "eps_next_y") && (!eps_edge_case_processed)) {
+        processed["eps_next_y_estimate"] = toNumber(v);
+        eps_edge_case_processed = true;
         return;
       } else if (v[v.length - 1] === "%") {
         value = percToNumber(v);

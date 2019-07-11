@@ -49,6 +49,7 @@ var getSnapshotInfo = function getSnapshotInfo(page) {
 var processSnapshotInfo = function processSnapshotInfo(info) {
   return new Promise(function (resolve, reject) {
     var processed = {};
+    var eps_edge_case_processed = false;
     info.forEach(function (tuple) {
       var label = (0, _slugify["default"])(tuple[0].toLowerCase(), "_");
       var value = "";
@@ -64,6 +65,10 @@ var processSnapshotInfo = function processSnapshotInfo(info) {
 
         processed["volatility_week"] = _values[0];
         processed["volatility_month"] = _values[1];
+        return;
+      } else if (label === "eps_next_y" && !eps_edge_case_processed) {
+        processed["eps_next_y_estimate"] = (0, _convert.toNumber)(v);
+        eps_edge_case_processed = true;
         return;
       } else if (v[v.length - 1] === "%") {
         value = (0, _convert.percToNumber)(v);
