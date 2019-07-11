@@ -7,8 +7,8 @@
     "build": "npx babel ./src --out-dir ./dist -w --presets=@babel/env"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/DHDaniel/finwiz.git"
+    "type": "git",
+    "url": "https://github.com/DHDaniel/finwiz.git"
   },
   "keywords": [
     "finance",
