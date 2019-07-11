@@ -1,10 +1,14 @@
 {
   "name": "finwiz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get a company's financials and stock information through a simple promise-based API.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx babel ./src --out-dir ./dist -w --presets=@babel/env"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/DHDaniel/finwiz.git"
   },
   "keywords": [
     "finance",
