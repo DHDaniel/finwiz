@@ -1,7 +1,7 @@
 {
   "name": "finwiz",
-  "version": "1.0.0",
-  "description": "Get a company's financials and stock information using a simple API.",
+  "version": "1.0.1",
+  "description": "Get a company's financials and stock information through a simple promise-based API.",
   "main": "dist/index.js",
   "scripts": {
     "build": "npx babel ./src --out-dir ./dist -w --presets=@babel/env"
@@ -14,7 +14,7 @@
     "scraper",
     "news"
   ],
-  "author": "Daniel Hernandez Hernandez",
+  "author": "Daniel Hernandez Hernandez (https://github.com/DHDaniel)",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.24.0",
