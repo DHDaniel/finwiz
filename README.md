@@ -41,7 +41,8 @@ Example output of the above code is shown below:
   perf_week: 2.25, // performance during the week (percentage)
   market_cap: 948320000000, // market capitalization (USD)
   forward_pe: 16.19, // forward price to earnings (next fiscal year)
-  eps_next_y: 10.36, // earnings per share estimate for next year
+  eps_next_y_estimate: 12.26, // earnings per share estimate for next year
+  eps_next_y: 10.36, // earnings per share estimate growth for next year (percentage)
   insider_trans: -4.02, // insider transactions (6-month change in insider ownership)
   shs_float: 4600000000, // shares float
   perf_month: 11.88, // performance for the month (percentage)
